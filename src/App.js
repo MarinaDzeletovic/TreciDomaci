@@ -11,6 +11,9 @@ function App() {
     <>
       <Navbar />
       <Switch>
+        <Route path='/spisak'>
+          <SpisakValuta valute={valute.data} />
+        </Route>
         <Route path='/'>
           <Konvertor valute={valute.data} />
         </Route>
